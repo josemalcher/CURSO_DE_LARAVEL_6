@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/contato', function (){
+    return 'Contato!!';
+});
+
+Route::get('/empresa', function (){
+    return view('site.contact');
+});
+
+Route::post('/register', function (){
+    return '';
+});
