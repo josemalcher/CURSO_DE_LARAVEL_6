@@ -94,7 +94,7 @@ Route::middleware([])->group(function (){
    }) ;
 });
 */
-
+/*
 Route::group([
     'middleware'=> [],
     'prefix' => 'admin',
@@ -104,4 +104,4 @@ Route::group([
     Route::get('/dashboard'  , 'testeControlleler@index')     ->name('dashboard');
     Route::get('/financeiro ', 'testeControlleler@financeiro')->name('financeiro');
     Route::get('/produtos'   , 'testeControlleler@produtos')  ->name('produtos');
-});
+});*/

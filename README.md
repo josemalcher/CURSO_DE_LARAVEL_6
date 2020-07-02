@@ -37,6 +37,35 @@ APRENDA DE UMA VEZ POR TODAS O MELHOR E MAIS COMPLETO FRAMEWORK PHP DO MERCADO. 
 - 14 - Grupo de Rotas no Laravel 
 - 15 - Comandos do Artisan para Rotas no Laravel 
 
+```
+> php artisan route:list
++--------+----------------------------------------+------------------------+----------+---------------------------------------+--------------+
+| Domain | Method                                 | URI                    | Name     | Action                                | Middleware   |
++--------+----------------------------------------+------------------------+----------+---------------------------------------+--------------+
+|        | GET|HEAD                               | /                      |          | Closure                               | web          |
+|        | GET|HEAD|POST|PUT|PATCH|DELETE|OPTIONS | any                    |          | Closure                               | web          |
+|        | GET|HEAD                               | api/user               |          | Closure                               | api,auth:api |
+|        | GET|HEAD                               | categoria/{flag}       |          | Closure                               | web          |
+|        | GET|HEAD                               | categoria/{flag}/posts |          | Closure                               | web          |
+|        | GET|HEAD                               | contato                |          | Closure                               | web          |
+|        | GET|HEAD                               | empresa                |          | Closure                               | web          |
+|        | GET|HEAD                               | login                  | login    | Closure                               | web          |
+|        | GET|POST|HEAD                          | match                  |          | Closure                               | web          |
+|        | GET|HEAD                               | nome-url               | url.name | Closure                               | web          |
+|        | GET|HEAD                               | produtos/{idProdutos?} |          | Closure                               | web          |
+|        | GET|HEAD|POST|PUT|PATCH|DELETE|OPTIONS | redirect1              |          | Illuminate\Routing\RedirectController | web          |
+|        | GET|HEAD                               | redirect2              |          | Closure                               | web          |
+|        | GET|HEAD                               | redirect3              |          | Closure                               | web          |
+|        | POST                                   | register               |          | Closure                               | web          |
+|        | GET|HEAD                               | view                   |          | Illuminate\Routing\ViewController     | web          |
++--------+----------------------------------------+------------------------+----------+---------------------------------------+--------------+
+
+> php artisan route:cache
+
+Route cache cleared!
+
+```
+
 [Voltar ao Índice](#indice)
 
 ---
