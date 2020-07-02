@@ -58,3 +58,10 @@ Route::get('/redirect2', function (){
 });
 
 Route::view('/view', 'welcome', ['id'=> 'teste']);
+
+Route::get('/redirect3', function (){
+    return redirect()->route('url.name');
+});
+Route::get('/nome-url', function (){
+    return 'OK Redirect 3';
+})->name('url.name');
