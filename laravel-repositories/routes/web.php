@@ -65,3 +65,43 @@ Route::get('/redirect3', function (){
 Route::get('/nome-url', function (){
     return 'OK Redirect 3';
 })->name('url.name');
+
+Route::get('/login', function (){
+   return 'LOGIN Page';
+})->name('login');
+
+/*
+
+Route::middleware([])->group(function (){
+   Route::prefix('painel')->group(function (){
+       Route::namespace('Admin')->group( function (){
+           Route::name('admin.')->group(function (){
+               //           Route::get('/dashboard', function (){
+//               return "DASHBOARD";
+//           });
+//           Route::get('/financeiro', function (){
+//               return "FINANCEIRO";
+//           });
+//           Route::get('/produtos', function (){
+//               return "PRODUTOS ADMIN";
+//           });
+               Route::get('/'           , 'testeControlleler@index')     ->name('home');
+               Route::get('/dashboard'  , 'testeControlleler@index')     ->name('dashboard');
+               Route::get('/financeiro ', 'testeControlleler@financeiro')->name('financeiro');
+               Route::get('/produtos'   , 'testeControlleler@produtos')  ->name('produtos');
+           });
+       });
+   }) ;
+});
+*/
+
+Route::group([
+    'middleware'=> [],
+    'prefix' => 'admin',
+    'namespace' => 'Admin',
+], function (){
+    Route::get('/'           , 'testeControlleler@index')     ->name('home');
+    Route::get('/dashboard'  , 'testeControlleler@index')     ->name('dashboard');
+    Route::get('/financeiro ', 'testeControlleler@financeiro')->name('financeiro');
+    Route::get('/produtos'   , 'testeControlleler@produtos')  ->name('produtos');
+});
