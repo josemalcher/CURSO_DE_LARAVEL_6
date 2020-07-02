@@ -34,3 +34,15 @@ Route::any('/any', function (){ // permite todos os tipos de verbos (post/get/pu
 Route::match(['get', 'post'], '/match', function (){
     return "MATCH";
 });
+
+Route::get('/categoria/{flag}', function ($param1){
+    return "Produtos da Categoria: {$param1}" ;
+});
+
+Route::get('/categoria/{flag}/posts', function ($flag){
+    return "Produtos da Postagem: {$flag}" ;
+});
+
+Route::get('/produtos/{idProdutos?}', function ($idProdutos = ''){ // ? - $param = 'algo'
+    return "Produto(s) {$idProdutos}";
+});
