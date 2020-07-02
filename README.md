@@ -29,13 +29,13 @@ APRENDA DE UMA VEZ POR TODAS O MELHOR E MAIS COMPLETO FRAMEWORK PHP DO MERCADO. 
 
 ## <a name="parte2">2 - Rotas</a>
 
-- 09 - Introdução a Rotas no Laravel 6.x free
-- 10 - Rotas any e match no Laravel free
-- 11 - Rotas com parâmetros no Laravel free
-- 12 - Rotas no Laravel - redirect e view free
-- 13 - Rotas nomeadas no Laravel free
-- 14 - Grupo de Rotas no Laravel free
-- 15 - Comandos do Artisan para Rotas no Laravel free
+- 09 - Introdução a Rotas no Laravel 6.x 
+- 10 - Rotas any e match no Laravel 
+- 11 - Rotas com parâmetros no Laravel 
+- 12 - Rotas no Laravel - redirect e view 
+- 13 - Rotas nomeadas no Laravel 
+- 14 - Grupo de Rotas no Laravel 
+- 15 - Comandos do Artisan para Rotas no Laravel 
 
 [Voltar ao Índice](#indice)
 

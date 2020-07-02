@@ -26,3 +26,11 @@ Route::get('/empresa', function (){
 Route::post('/register', function (){
     return '';
 });
+
+Route::any('/any', function (){ // permite todos os tipos de verbos (post/get/put)
+    return 'ANY';
+});
+
+Route::match(['get', 'post'], '/match', function (){
+    return "MATCH";
+});
