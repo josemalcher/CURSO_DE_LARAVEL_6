@@ -46,3 +46,15 @@ Route::get('/categoria/{flag}/posts', function ($flag){
 Route::get('/produtos/{idProdutos?}', function ($idProdutos = ''){ // ? - $param = 'algo'
     return "Produto(s) {$idProdutos}";
 });
+
+//Route::get('/redirect1', function (){
+//    //return "Redirect 1";
+//    return redirect('/redirect2');
+//});
+Route::redirect('/redirect1', '/redirect2');
+
+Route::get('/redirect2', function (){
+    return "Redirect 2";
+});
+
+Route::view('/view', 'welcome', ['id'=> 'teste']);
