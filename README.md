@@ -73,7 +73,12 @@ Route cache cleared!
 
 ## <a name="parte3">3 - Controllers</a>
 
-
+16 - Introdução aos Controllers no Laravel 6.x
+17 - Controllers com Parâmetros de Rotas no Laravel 6.x
+18 - Controllers de CRUD no Laravel 6.x
+19 - Controllers Resources no Laravel 6.x
+20 - Injeção de Dependências no Laravel 6.x
+21 - Middlewares em Controllers no Laravel 6.x
 
 [Voltar ao Índice](#indice)
 

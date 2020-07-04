@@ -105,3 +105,5 @@ Route::group([
     Route::get('/financeiro ', 'testeControlleler@financeiro')->name('financeiro');
     Route::get('/produtos'   , 'testeControlleler@produtos')  ->name('produtos');
 });*/
+
+Route::get('products', 'ProductController@index')->name('products.index');
