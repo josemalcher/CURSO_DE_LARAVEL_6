@@ -12,4 +12,9 @@ class ProductController extends Controller
 
         return $produtos;// retorna "automágicamente" um JSON
     }
+
+    public function show($id){
+        return "Exibindo produto de id: {$id}";
+    }
+
 }
