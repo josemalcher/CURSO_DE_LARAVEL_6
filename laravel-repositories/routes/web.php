@@ -117,6 +117,6 @@ Route::put('products/{id}'      , 'ProductController@update') ->name('products.u
 
 Route::delete('products/{id}'      , 'ProductController@destroy') ->name('products.destroy');*/
 
-Route::resource('products', 'ProductController');
+Route::resource('products', 'ProductController');//->middleware('auth');
 
 
