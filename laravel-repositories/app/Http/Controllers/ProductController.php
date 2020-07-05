@@ -27,7 +27,10 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return "Listagem de Produtos";
+        $param1 = 123;
+
+        //return view('teste', ['teste'=>$param1]);
+        return view('teste', compact('param1'));
     }
 
     /**

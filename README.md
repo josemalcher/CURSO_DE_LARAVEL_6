@@ -73,12 +73,12 @@ Route cache cleared!
 
 ## <a name="parte3">3 - Controllers</a>
 
-16 - Introdução aos Controllers no Laravel 6.x
-17 - Controllers com Parâmetros de Rotas no Laravel 6.x
-18 - Controllers de CRUD no Laravel 6.x
-19 - Controllers Resources no Laravel 6.x
-20 - Injeção de Dependências no Laravel 6.x
-21 - Middlewares em Controllers no Laravel 6.x
+- 16 - Introdução aos Controllers no Laravel 6.x
+- 17 - Controllers com Parâmetros de Rotas no Laravel 6.x
+- 18 - Controllers de CRUD no Laravel 6.x
+- 19 - Controllers Resources no Laravel 6.x
+- 20 - Injeção de Dependências no Laravel 6.x
+- 21 - Middlewares em Controllers no Laravel 6.x
 
 [Voltar ao Índice](#indice)
 
@@ -87,7 +87,16 @@ Route cache cleared!
 
 ## <a name="parte4">4 - Views</a>
 
-
+- 22 - Introdução a Views no Laravel 6.x
+- 23 - Impressões no Blade Laravel {{ vs {!!
+- 24 - Templates Blade Laravel
+- 25 - Estruturas de Controle Blade Laravel
+- 26 - Estruturas de Repetição Blade Laravel
+- 27 - Includes, Components e Slots no Blade Laravel
+- 28 - Stacks Blade Laravel
+- 29 - Formulários no Laravel (csrf)
+- 30 - Formulários com Métodos de Envio no Laravel (verbo http)
+- 31 - Outros recursos de views no Laravel
 
 [Voltar ao Índice](#indice)
 
