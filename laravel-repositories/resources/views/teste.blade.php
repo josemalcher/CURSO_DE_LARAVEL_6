@@ -11,5 +11,10 @@
 <h2>Teste ok!</h2>
 {{--<p>{{$teste}}</p>--}}
 <p>{{$param1}}</p>
+
+{{$html}}
+
+{!! $html !!}
+
 </body>
 </html>
