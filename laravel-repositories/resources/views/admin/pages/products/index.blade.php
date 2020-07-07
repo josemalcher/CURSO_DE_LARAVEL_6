@@ -6,4 +6,49 @@
 
 <h1>Listas de Produtos...</h1>
 
+    @if($controle == '123')
+        é igual a 123
+    @elseif($controle === 123)
+        é igual q 123
+    @else
+        não é igual!
+    @endif
+
+
+    @unless($controle == 123)
+        contrário do if
+    @else
+        pode ter else
+    @endunless
+
+    @isset($controle)
+        verifica se a variável existe
+    @endisset
+
+    @empty($controle)
+        verifica se está vazio
+    @endempty
+
+    @auth
+        entra quando está autenticado
+    @else
+        não está logada
+    @endauth
+
+    @guest
+        usuários não autenticados
+    @endguest
+
+
+    @switch($controle)
+        @case(1)
+            Igual a 1
+            @break
+        @case(2)
+            Igual a 2
+            @break
+        @default
+            Mensagem padrão
+    @endswitch
+
 @endsection

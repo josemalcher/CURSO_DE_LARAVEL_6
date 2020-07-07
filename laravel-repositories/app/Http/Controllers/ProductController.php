@@ -29,9 +29,10 @@ class ProductController extends Controller
     {
         $param1 = 123;
         $html = "<h1>TESTE de HTML</h1>";
+        $controle = 123;
 
         //return view('teste', ['teste'=>$param1]);
-        return view('admin.pages.products.index', compact('param1', 'html'));
+        return view('admin.pages.products.index', compact('param1', 'html', 'controle'));
     }
 
     /**
