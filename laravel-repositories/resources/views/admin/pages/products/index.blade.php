@@ -51,4 +51,24 @@
             Mensagem padrão
     @endswitch
 
+<hr>
+
+    @if(isset($arrayteste))
+        @foreach($arrayteste as $item)
+        <p class="@if($loop->first) last @endif">{{$item}}</p>
+        @endforeach
+    @endif
+<hr>
+    @forelse($arrayteste as $item)
+        <p class="@if($loop->last) last @endif">{{$item}}</p>
+    @empty
+        <p>Não existe itens Cadastrados</p>
+    @endforelse
+
+
+
 @endsection
+
+<style>
+    .last {background: #CCC;}
+</style>
