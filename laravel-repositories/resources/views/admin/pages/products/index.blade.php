@@ -78,6 +78,14 @@
     @endcomponent
 @endsection
 
-<style>
-    .last {background: #CCC;}
-</style>
+@push('styles')
+    <style>
+        .last {background: #CCC;}
+    </style>
+@endpush
+
+@push('scripts')
+    <script>
+        document.body.style.background = '#CCC';
+    </script>
+@endpush
