@@ -98,6 +98,11 @@ Route cache cleared!
 - 30 - Formulários com Métodos de Envio no Laravel (verbo http)
 - 31 - Outros recursos de views no Laravel
 
+```
+php artisan view:clear
+
+```
+
 [Voltar ao Índice](#indice)
 
 ---
