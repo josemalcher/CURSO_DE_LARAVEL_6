@@ -5,7 +5,11 @@
 @section('content')
 
 <h1>Listas de Produtos...</h1>
+<hr>
 
+<a href="{{route('products.create')}}">Cadastrar PRODUTO</a>
+
+<hr>
     @if($controle == '123')
         é igual a 123
     @elseif($controle === 123)
