@@ -65,8 +65,17 @@
         <p>Não existe itens Cadastrados</p>
     @endforelse
 
+    @include('admin.includes.alert', ['content'=> 'Content de dados'])
 
+<hr>
 
+    @component('admin.components.card')
+
+        @slot('title')
+            Título dentro de slot
+        @endslot
+        Um Card de Exemplo
+    @endcomponent
 @endsection
 
 <style>
