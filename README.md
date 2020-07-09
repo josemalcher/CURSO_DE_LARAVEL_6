@@ -110,7 +110,11 @@ php artisan view:clear
 
 ## <a name="parte5">5 - Request</a>
 
-
+- 32 - Pegar dados do formulário com o Laravel
+- 33 - Upload de Arquivos no Laravel, com Request
+- 34 - Upload de Arquivos Publicos no Laravel 
+- 35 - Validações no Laravel 6
+- 36 - Validações no Laravel 6 com Form Request
 
 [Voltar ao Índice](#indice)
 

@@ -55,7 +55,25 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        dd('Cadastrando....');
+        //dd($request->all());
+        /*
+         array:3 [▼
+          "_token" => "6hGmXf9TxjVHERYriGLo4cLZnCXrujoI84IpaA5s"
+          "name" => "teste"
+          "description" => "123"]
+        */
+
+        //dd($request->only(['name', "description"]));
+ /*       array:2 [▼
+          "name" => "teste"
+          "description" => "123"
+        ]*/
+
+        // dd($request->has('name'));
+        // dd($request->name);
+        //dd($request->input('name', 'valor default aqui'));
+        dd($request->except('_token'));
+
     }
 
     /**
