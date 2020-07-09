@@ -72,7 +72,19 @@ class ProductController extends Controller
         // dd($request->has('name'));
         // dd($request->name);
         //dd($request->input('name', 'valor default aqui'));
-        dd($request->except('_token'));
+        //dd($request->except('_token'));
+
+        //dd($request->file('photo')->isValid()); // true
+        if($request->file('photo')->isValid()){
+            //dd($request->photo->extension()); // "jpeg"
+            //dd($request->file('photo')->store('products'));
+
+            $nameFile = $request->name . '.' . $request->photo->extension();
+            dd($request->file('photo')->storeAs('products', $nameFile));
+
+        }
+
+
 
     }
 
