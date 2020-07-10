@@ -113,6 +113,14 @@ php artisan view:clear
 - 32 - Pegar dados do formulário com o Laravel
 - 33 - Upload de Arquivos no Laravel, com Request
 - 34 - Upload de Arquivos Publicos no Laravel 
+
+```
+php artisan storage:link
+The [public/storage] directory has been linked.
+
+// link = http://cursolaravel6.devlocal/storage/products/testePublico.jpeg
+```
+
 - 35 - Validações no Laravel 6
 - 36 - Validações no Laravel 6 com Form Request
 
