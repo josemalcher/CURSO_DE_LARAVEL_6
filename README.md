@@ -157,6 +157,74 @@ Nothing to migrate.
 ```
 
 - 39 - Seeders no Laravel 6.x
+
+```
+> php artisan make:seeder UsersTableSeeder
+Seeder created successfully.
+
+```
+
+```php
+<?php
+
+use App\User;
+use Illuminate\Database\Seeder;
+
+class UsersTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        User::create([ // laravel-repositories/app/User.php
+            'name'      => 'José Malcher jr',
+            'email'     => 'contato@josemalcher.net',
+            'password' => bcrypt('123456'),
+        ]);
+    }
+}
+
+```
+
+```php
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+         $this->call(UsersTableSeeder::class);
+    }
+}
+
+```
+
+```
+php artisan db:seed
+Seeding: UsersTableSeeder
+Seeded:  UsersTableSeeder (0.1 seconds)
+Database seeding completed successfully.
+ 
+```
+
+- Rodar somente outro Seeder
+
+```
+php artisan db:seeder --class=ProductTableSeeder
+```
+
+
+
 - 40 - Factory no Laravel 6.x
 
 [Voltar ao Índice](#indice)
