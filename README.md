@@ -227,6 +227,13 @@ php artisan db:seeder --class=ProductTableSeeder
 
 - 40 - Factory no Laravel 6.x
 
+```
+php artisan db:seed --class=UsersTableSeeder
+Database seeding completed successfully.
+
+```
+
+
 [Voltar ao Índice](#indice)
 
 ---
