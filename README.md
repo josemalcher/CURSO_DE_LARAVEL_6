@@ -138,7 +138,26 @@ php artisan make:request StoreUpdateProductRequest
 
 ## <a name="parte6">6 - Banco de Dados</a>
 
+- 37 - Conectar o Laravel 6.x ao Banco de Dados
+- 38 - Migrations no Laravel 6.x 
 
+```
+> php artisan migrate
+Migration table created successfully.
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.07 seconds)
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table (0.04 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.02 seconds)
+
+> php artisan migrate
+Nothing to migrate.
+
+```
+
+- 39 - Seeders no Laravel 6.x
+- 40 - Factory no Laravel 6.x
 
 [Voltar ao Índice](#indice)
 
