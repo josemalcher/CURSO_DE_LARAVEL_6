@@ -124,6 +124,13 @@ The [public/storage] directory has been linked.
 - 35 - Validações no Laravel 6
 - 36 - Validações no Laravel 6 com Form Request
 
+```
+php artisan make:request StoreUpdateProductRequest
+
+```
+
+
+
 [Voltar ao Índice](#indice)
 
 ---
