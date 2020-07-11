@@ -241,7 +241,25 @@ Database seeding completed successfully.
 
 ## <a name="parte7">7 - Eloquent ORM</a>
 
+- 41 - Introdução ao Eloquent ORM do Laravel
 
+```
+php artisan make:model Product -m
+Model created successfully.
+Created Migration: 2020_07_11_190046_create_products_table
+
+```
+
+- 42 - Desafio - Criar Factory de Produtos no Laravel 6.x
+- 43 - Listar/Paginar Registros no Laravel 6.x
+- 44 - Incluindo o Boostrap no Laravel 6.x (via CDN)
+- 45 - Listar Detalhes de um registro especifico no Laravel 6
+- 46 - Inserir Novo Registro no Banco de Dados com o Laravel 6
+- 47 - Deletar um Registro no Laravel 6.x 
+- 48 - Editar um registro no Laravel 6.x
+- 49 - Validações de Produtos no Laravel 6 com Form Request
+- 50 - Filtrar Registros no Laravel 6.x
+- 51 - Upload de Imagem para Produto no Laravel
 
 [Voltar ao Índice](#indice)
 
