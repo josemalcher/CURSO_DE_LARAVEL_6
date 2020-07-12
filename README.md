@@ -251,6 +251,55 @@ Created Migration: 2020_07_11_190046_create_products_table
 ```
 
 - 42 - Desafio - Criar Factory de Produtos no Laravel 6.x
+
+```
+php artisan make:factory ProductFactory --model=Product
+Factory created successfully.
+
+<?php
+
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+
+use App\Product;
+use Faker\Generator as Faker;
+
+$factory->define(Product::class, function (Faker $faker) {
+    return [
+        'name' => $faker->unique()->word,
+        'description' => $faker->sentence(),
+        'price' => 12.2
+    ];
+});
+
+
+php artisan make:seeder ProductTableSeeder
+Seeder created successfully.
+
+<?php
+
+use App\Product;
+use Illuminate\Database\Seeder;
+
+class ProductTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        factory(Product::class, 100)->create();
+    }
+}
+
+
+php artisan db:seed --class=ProductTableSeeder
+Database seeding completed successfully.
+
+```
+
+
 - 43 - Listar/Paginar Registros no Laravel 6.x
 - 44 - Incluindo o Boostrap no Laravel 6.x (via CDN)
 - 45 - Listar Detalhes de um registro especifico no Laravel 6
