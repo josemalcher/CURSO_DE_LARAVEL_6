@@ -4,92 +4,27 @@
 
 @section('content')
 
-<h1>Listas de Produtos...</h1>
-<hr>
+    <h1>Exibindo os Produtos</h1>
+    <a href="{{route('products.create')}}">Cadastrar PRODUTO</a>
+    <hr>
 
-<a href="{{route('products.create')}}">Cadastrar PRODUTO</a>
-
-<hr>
-    @if($controle == '123')
-        é igual a 123
-    @elseif($controle === 123)
-        é igual q 123
-    @else
-        não é igual!
-    @endif
-
-
-    @unless($controle == 123)
-        contrário do if
-    @else
-        pode ter else
-    @endunless
-
-    @isset($controle)
-        verifica se a variável existe
-    @endisset
-
-    @empty($controle)
-        verifica se está vazio
-    @endempty
-
-    @auth
-        entra quando está autenticado
-    @else
-        não está logada
-    @endauth
-
-    @guest
-        usuários não autenticados
-    @endguest
-
-
-    @switch($controle)
-        @case(1)
-            Igual a 1
-            @break
-        @case(2)
-            Igual a 2
-            @break
-        @default
-            Mensagem padrão
-    @endswitch
-
-<hr>
-
-    @if(isset($arrayteste))
-        @foreach($arrayteste as $item)
-        <p class="@if($loop->first) last @endif">{{$item}}</p>
-        @endforeach
-    @endif
-<hr>
-    @forelse($arrayteste as $item)
-        <p class="@if($loop->last) last @endif">{{$item}}</p>
-    @empty
-        <p>Não existe itens Cadastrados</p>
-    @endforelse
-
-    @include('admin.includes.alert', ['content'=> 'Content de dados'])
-
-<hr>
-
-    @component('admin.components.card')
-
-        @slot('title')
-            Título dentro de slot
-        @endslot
-        Um Card de Exemplo
-    @endcomponent
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($products as $product)
+                <tr>
+                    <td>{{ $product->name }}</td>
+                    <td>{{ $product->price }}</td>
+                    <td><a href="">Detalhes</a></td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+    {!!  $products->links() !!}
 @endsection
-
-@push('styles')
-    <style>
-        .last {background: #CCC;}
-    </style>
-@endpush
-
-@push('scripts')
-    <script>
-        document.body.style.background = '#CCC';
-    </script>
-@endpush
