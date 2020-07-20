@@ -111,7 +111,7 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(StoreUpdateProductRequest $request, $id)
     {
         if(!$product = $this->repository->find($id)){
             return redirect()->back();

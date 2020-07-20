@@ -23,8 +23,10 @@ class StoreUpdateProductRequest extends FormRequest
      */
     public function rules()
     {
+        $id = $this->segments(2);
+
         return [
-            'name'          => 'required | min:3 | max: 255',
+            'name'          => "required | min:3 | max: 255 | unique:products, name, {$id}, id" ,
             'description'   => 'nullable | min:3 | max:10000',
             'price'         => 'required',
             'image'         => 'image'
