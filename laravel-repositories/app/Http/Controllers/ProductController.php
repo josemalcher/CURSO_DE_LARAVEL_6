@@ -140,4 +140,16 @@ class ProductController extends Controller
         //dd("deletando o produto $id");
         return redirect()->route('products.index');
     }
+
+    public function search(Request $request)
+    {
+        $filters = $request->except('_token');
+
+        $products = $this->repository->search($request->filter);
+
+        return view('admin.pages.products.index', [
+            'products' => $products,
+            'filters' => $filters,
+        ]);
+    }
 }

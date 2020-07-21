@@ -7,6 +7,12 @@
     <h1>Exibindo os Produtos</h1>
     <a href="{{route('products.create')}}" class="btn btn-primary">Cadastrar PRODUTO</a>
     <hr>
+    <form action="{{ route('products.search') }}" method="post" class="form form-inline">
+        @csrf
+        <input type="text" name="filter" placeholder="Filtrar:" class="form-control" value="{{ $filters['filter'] ?? '' }}">
+        <button type="submit" class="btn btn-info">Pesquisar</button>
+    </form>
+    <hr>
     <div class="container">
         <table class="table table-striped">
             <thead>
@@ -27,6 +33,10 @@
             @endforeach
             </tbody>
         </table>
-        {!!  $products->links() !!}
+        @if (isset($filters))
+            {!! $products->appends($filters)->links() !!}
+        @else
+            {!! $products->links() !!}
+        @endif
     </div>
 @endsection
