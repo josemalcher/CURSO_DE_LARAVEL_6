@@ -317,7 +317,9 @@ Database seeding completed successfully.
 
 ## <a name="parte8">8 - Autenticação</a>
 
-
+- 52 - Autenticação no Laravel (5, 6 e 7)
+- 53 - Compilar Assets com o Laravel Mix
+- 54 - Finalizando a Autenticação no Laravel
 
 [Voltar ao Índice](#indice)
 
