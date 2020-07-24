@@ -118,7 +118,7 @@ Route::put('products/{id}'      , 'ProductController@update') ->name('products.u
 Route::delete('products/{id}'      , 'ProductController@destroy') ->name('products.destroy');*/
 
 Route::any('products/search', 'ProductController@search')->name('products.search')->middleware('auth');
-Route::resource('products', 'ProductController')->middleware('auth');
+Route::resource('products', 'ProductController')->middleware(['auth', 'check.is.admin']);
 
 
 

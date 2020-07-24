@@ -335,7 +335,11 @@ npm run dev
 
 ## <a name="parte9">9 - Middlewares</a>
 
+- 55 -Middlewares (filtros) no Laravel
+```
+php artisan make:middleware CheckIsAdminMiddleware
 
+```
 
 [Voltar ao Índice](#indice)
 
