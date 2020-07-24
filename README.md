@@ -319,6 +319,13 @@ Database seeding completed successfully.
 
 - 52 - Autenticação no Laravel (5, 6 e 7)
 - 53 - Compilar Assets com o Laravel Mix
+
+```
+npm install
+
+npm run dev
+```
+
 - 54 - Finalizando a Autenticação no Laravel
 
 [Voltar ao Índice](#indice)
